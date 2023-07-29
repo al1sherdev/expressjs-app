@@ -8,11 +8,32 @@
             </a>
 
             <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/products">Products</a>
-                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/add">Add</a>
-                <a class="py-2 link-body-emphasis text-decoration-none" href="/support">Support</a>
+
+                {{#if isProducts}}
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none text-primary fw-semibold" href="/products">Products</a>
+                {{else}}
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/products">Products</a>
+                {{/if}}
+
+
+                {{#if isAdd}}
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none text-primary fw-semibold" href="/add">Add</a>
+                {{else}}
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/add">Add</a>
+                {{/if}}
+
+
+                {{#if isSupport}}
+                    <a class="py-2 link-body-emphasis text-decoration-none text-primary fw-semibold" href="/support">Support</a>
+                {{else}}
+                    <a class="py-2 link-body-emphasis text-decoration-none" href="/support">Support</a>
+                {{/if}}
+                
                 <button class="btn btn-outline-primary ms-2">
-                    <a href="/signup" class="text-decoration-none text-black">Sign Up</a>
+                    <a href="/signin" class="text-decoration-none text-black">Login</a>
+                </button>
+                <button class="btn btn-outline-primary ms-2">
+                    <a href="/signup" class="text-decoration-none text-black">Create account</a>
                 </button>
             </nav>
         </div>

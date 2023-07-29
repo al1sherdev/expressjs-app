@@ -1,1 +1,27 @@
-<h1>SignUp</h1>
+<form action="/signup" method="post" class="w-75 mx-auto">
+
+    <div class="d-flex">
+        <div class="form-floating mb-3 w-50 me-2">
+            <input type="name" class="form-control" id="floatingInput" name="firstname"  placeholder="enter your name">
+            <label for="floatingInput">First name</label>
+        </div>
+        <div class="form-floating mb-3 w-50">
+            <input type="name" class="form-control" id="floatingInput" name="lastname"  placeholder="enter your last name">
+            <label for="floatingInput">Last name</label>
+        </div>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+    </div>
+
+    <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-outline-primary mt-3 ">Create account</button>
+    </div>
+</form>
