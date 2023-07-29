@@ -1,14 +1,18 @@
 <html lang="en">
     {{!-- header --}}
 {{> head}}
-<body>
-    
-    {{!-- body --}}
-    <div class="container">
-        {{{ body }}}
-    </div>
 
-    {{!-- footer --}}
-    {{{ footer }}} 
-</body>
+    <body>
+        {{!-- navbar --}}
+        {{>navbar }}
+
+        {{!-- body --}}
+        <div class="container">
+            {{{ body }}}
+        </div>
+
+        {{!-- footer --}}
+        {{>footer }} 
+    </body>
+    
 </html>
